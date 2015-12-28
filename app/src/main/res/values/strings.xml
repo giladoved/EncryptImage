@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EncryptImage</string>
+    <string name="title_activity_encrypt_details">EncryptDetails</string>
+</resources>
