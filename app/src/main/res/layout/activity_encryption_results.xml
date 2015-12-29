@@ -17,8 +17,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Another One"
+        android:text="Save Image"
         android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButton"
+        android:id="@+id/saveImageBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButton"
         android:id="@+id/anotherOneBtnE"
         android:layout_gravity="center_horizontal" />
 

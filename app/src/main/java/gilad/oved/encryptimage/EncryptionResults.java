@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class EncryptionResults extends AppCompatActivity {
 
-    public final static int NUMBER_OF_IMAGES = 2;
+    public final static int NUMBER_OF_IMAGES = 20;
 
     Bitmap bitmapCopy;
 
@@ -29,6 +29,7 @@ public class EncryptionResults extends AppCompatActivity {
 
     ImageView encryptedImage;
     Button anotherOneBtn;
+    Button saveImageBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +37,11 @@ public class EncryptionResults extends AppCompatActivity {
         setContentView(R.layout.activity_encryption_results);
 
         encryptedImage = (ImageView)findViewById(R.id.encryptedImage);
-        encryptedImage.setOnLongClickListener(new View.OnLongClickListener() {
+
+        saveImageBtn = (Button) findViewById(R.id.saveImageBtn);
+        saveImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View v) {
+            public void onClick(View v) {
                 String root = Environment.getExternalStorageDirectory().toString();
                 File dir = new File(root + "/EncryptImage");
                 dir.mkdirs();
@@ -72,8 +75,6 @@ public class EncryptionResults extends AppCompatActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Save Failed", Toast.LENGTH_SHORT).show();
                 }
-
-                return true;
             }
         });
 

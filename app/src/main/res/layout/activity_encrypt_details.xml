@@ -13,7 +13,7 @@
             android:padding="20dp"
             android:textSize="18sp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Enter the text you'd like to encrypt in an image"
+            android:text="Enter the text you'd like to encrypt in an image. Generating an image may take a few seconds."
             android:layout_gravity="center_horizontal" />
 
         <EditText
@@ -33,6 +33,7 @@
         android:layout_marginTop="30dp"
         android:padding="20dp"
         android:id="@+id/generateBtn"
+        android:background="@color/colorButton"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
